@@ -12,7 +12,7 @@ const p = new Proxy(require("./palette"), {
 
 const theme = {
   $schema: "vscode://schemas/color-theme",
-  name: "Atelier Dark",
+  name: "Atelier Black",
   type: "dark",
   semanticHighlighting: true,
   semanticTokenColors: require("./semantic")(p),

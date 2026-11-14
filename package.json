@@ -39,7 +39,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Atelier Dark",
+        "label": "Atelier Black",
         "uiTheme": "vs-dark",
         "path": "./themes/atelier-dark-color-theme.json"
       }

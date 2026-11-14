@@ -10,7 +10,7 @@ Install **Atelier Black** from the [Visual Studio Marketplace](https://marketpla
 code --install-extension jayaswalprateek.atelier-theme
 ```
 
-Then open **Preferences: Color Theme** and pick **Atelier Dark**.
+Then open **Preferences: Color Theme** and pick **Atelier Black**.
 
 Atelier started as a long-running personal patch of the (now archived) [Gruvbox Material](https://github.com/sainnhe/gruvbox-material-vscode) dark theme, hard contrast. The syntax colors are Gruvbox Material's. The workbench has been reworked around the rules below and audited against every color VS Code currently exposes.
 
@@ -52,7 +52,7 @@ npm run audit    # report gaps, deprecated and unknown keys; regenerate referenc
 npm run check    # build + audit
 ```
 
-To preview changes, press F5 in this folder. That opens an Extension Development Host with Atelier installed; pick **Atelier Dark** there. With `npm run watch` running, saved edits show up live.
+To preview changes, press F5 in this folder. That opens an Extension Development Host with Atelier installed; pick **Atelier Black** there. With `npm run watch` running, saved edits show up live.
 
 There are no dependencies. Node 18 or newer is enough.
 
