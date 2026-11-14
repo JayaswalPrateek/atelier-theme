@@ -1,0 +1,59 @@
+{
+  "name": "atelier-theme",
+  "displayName": "Atelier Black",
+  "description": "A quiet, borderless dark theme: one black surface, warm grey chrome, and color only where it means something.",
+  "version": "0.1.0",
+  "publisher": "jayaswalprateek",
+  "author": {
+    "name": "Prateek Jayaswal"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayaswalPrateek/atelier-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JayaswalPrateek/atelier-theme/issues"
+  },
+  "homepage": "https://github.com/JayaswalPrateek/atelier-theme#readme",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "black",
+    "oled",
+    "gruvbox",
+    "minimal",
+    "borderless"
+  ],
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Atelier Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/atelier-dark-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node src/build.js",
+    "watch": "node --watch src/build.js",
+    "audit": "node tools/audit.js",
+    "check": "npm run build && npm run audit",
+    "sync": "sh tools/sync-vscode.sh",
+    "vscode:prepublish": "npm run check",
+    "package": "npx @vscode/vsce package",
+    "publish:vsce": "npx @vscode/vsce publish",
+    "publish:ovsx": "npx ovsx publish atelier-theme-$npm_package_version.vsix"
+  }
+}
